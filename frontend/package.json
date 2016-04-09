@@ -1,0 +1,43 @@
+{
+  "name": "mediahackday-ideas-frontend",
+  "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/as-ideas/mediahackday-ideas"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --inline --watch",
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.7.1",
+    "isparta-instrumenter-loader": "^1.0.0",
+    "jasmine-core": "^2.4.1",
+    "node-sass": "^3.4.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.2.0",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.1",
+    "angular-aria": "^1.5.1",
+    "angular-material": "^1.0.6",
+    "angular-messages": "^1.5.1",
+    "angular-resource": "^1.5.1",
+    "angular-ui-router": "^0.2.18"
+  }
+}

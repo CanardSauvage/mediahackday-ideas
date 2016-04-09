@@ -1,0 +1,9 @@
+server:
+    port: 8081
+
+spring.data.mongodb:
+              username: food-hacks-ideas
+              password: food-hacks-ideas
+              host: ds011880.mlab.com
+              port: 11880
+              database: food-hacks-ideas

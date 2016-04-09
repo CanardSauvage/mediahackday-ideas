@@ -1,0 +1,8 @@
+rootProject.name = 'mediahackday-ideas'
+
+include ':mediahackday-ideas-backend'
+include ':mediahackday-ideas-frontend'
+
+project(':mediahackday-ideas-backend').projectDir = "$rootDir/backend" as File
+project(':mediahackday-ideas-frontend').projectDir = "$rootDir/frontend" as File
+

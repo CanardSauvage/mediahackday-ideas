@@ -1,0 +1,57 @@
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+// Spinner
+.spinner-container {
+    background: url('../images/loading_spinner.gif') no-repeat center center;
+
+    opacity: 0.8;
+    background-color: #353535;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    text-align: center;
+
+    display: block;
+    z-index: 30000;
+
+    .hidden {
+        visibility: hidden;
+    }
+}
+
+// Message Bar
+#alert-message {
+    max-width: 100%;
+    z-index: 13000;
+
+    position: relative;
+
+    font-size: 16px;
+    line-height: 2;
+
+    opacity: 0.90;
+
+    color: #ffffff;
+
+    &.alert-info {
+        background-color: green;
+    }
+
+    &.alert-danger {
+        background-color: red;
+    }
+
+    .panel-close {
+        position: absolute;
+        font-size: 16px;
+        right: 10px;
+        font-weight: bold;
+    }
+}

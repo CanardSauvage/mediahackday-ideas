@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media-Hackday</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="app/manifest.json">
+
+    <base href="/">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src='app/bundle.js'></script>
+</head>
+
+<body ng-app="app">
+
+<div id="spinner" class="spinner-container "></div>
+
+
+<header ng-controller="navigationController">
+    <div class="md-toolbar-tools header" layout="row" layout-align="center center">
+        <a href="/">
+            <p class="header__title">Media-Hackday</p>
+        </a>
+    </div>
+
+    <div id="alert-message" class="alert hidden alert-dismissable">
+        <a class="panel-close close" ng-click="messages.dismissAlert()">×</a>
+        {{messages.message}}&nbsp;
+    </div>
+</header>
+
+<div class="background-image"></div>
+<main class="page-container" ng-view ui-view>
+</main>
+
+<footer>
+    <a href="http://www.axelspringerideas.de" target="_blank">
+        <img src="app/images/ideas_logo.png">
+    </a>
+</footer>
+</body>
+</html>
